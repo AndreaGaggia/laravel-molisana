@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;
 
-700&display=swap);body {
+700&display=swap);* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Playfair Display", serif;
   min-height: 100vh;
 }
@@ -11,15 +17,21 @@ header {
 }
 
 header nav {
-  background-color: lightgreen;
-  padding: 2rem;
+  background-color: #b1d281;
+  padding: 1.5rem;
 }
 
 header nav a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
   text-decoration: none;
-  color: inherit;
   text-transform: uppercase;
   display: inline-block;
   margin-right: 20px;
+}
+
+main {
+  padding: 1.5rem;
 }
 
