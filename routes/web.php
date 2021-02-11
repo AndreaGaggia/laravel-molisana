@@ -49,6 +49,36 @@ Route::get('/prodotti', function () {
             'src' => 'img/corte/58-misto-corto.jpg',
             'titolo' => 'N.58 Misto corto',
         ],
+        [
+            'tipo' => 'lunghe',
+            'src' => 'img/lunghe/4-spaghetto-quadrato-bucato.jpg',
+            'titolo' => 'N.4 Spaghetto quadrato bucato',
+        ],
+        [
+            'tipo' => 'lunghe',
+            'src' => 'img/lunghe/5-fettuccine.jpg',
+            'titolo' => 'N.5 Fettuccine',
+        ],
+        [
+            'tipo' => 'lunghe',
+            'src' => 'img/lunghe/6-linguine.jpg',
+            'titolo' => 'N.6 Linguine',
+        ],
+        [
+            'tipo' => 'lunghe',
+            'src' => 'img/lunghe/7-mezze-linguine.jpg',
+            'titolo' => 'N.7 Mezze linguine',
+        ],
+        [
+            'tipo' => 'lunghe',
+            'src' => 'img/lunghe/11-spaghettino-quadrato.jpg',
+            'titolo' => 'N.11 Spaghettino quadrato',
+        ],
+        [
+            'tipo' => 'cortissime',
+            'src' => 'img/cortissime/84-ditale-quadrato.jpg',
+            'titolo' => 'N.84 Ditale quadrato',
+        ],
     ];
     return view('prodotti', compact('data'));
 });

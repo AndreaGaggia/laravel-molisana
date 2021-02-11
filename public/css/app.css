@@ -35,20 +35,43 @@ main {
   padding: 1.5rem;
 }
 
-main .prodotto {
-  width: 480px;
-  height: 290px;
-  position: relative;
+main .prodotti .tipo {
+  margin-bottom: 50px;
 }
 
-main .prodotto .overlay {
+main .prodotti .tipo h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+main .prodotti .tipo .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+main .prodotti .tipo .cards .prodotto {
+  width: 100%;
+  height: 290px;
+  border-radius: 0.5rem;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: background-size 1s ease;
+}
+
+main .prodotti .tipo .cards .prodotto .overlay {
   position: absolute;
   inset: 0;
   background-color: #ffffff70;
   display: none;
 }
 
-main .prodotto .overlay h3 {
+main .prodotti .tipo .cards .prodotto .overlay h3 {
   font-weight: normal;
   font-size: 22px;
   color: #001942;
@@ -57,12 +80,12 @@ main .prodotto .overlay h3 {
   padding-bottom: 8px;
 }
 
-main .prodotto .overlay h3 a {
+main .prodotti .tipo .cards .prodotto .overlay h3 a {
   text-decoration: none;
   color: inherit;
 }
 
-main .prodotto .overlay h3:after {
+main .prodotti .tipo .cards .prodotto .overlay h3:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -73,7 +96,11 @@ main .prodotto .overlay h3:after {
   border-bottom: 2px solid #001942;
 }
 
-main .prodotto:hover .overlay {
+main .prodotti .tipo .cards .prodotto:hover {
+  background-size: 110% 110%;
+}
+
+main .prodotti .tipo .cards .prodotto:hover .overlay {
   display: flex;
   flex-direction: column;
   justify-content: center;
