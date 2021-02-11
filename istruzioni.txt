@@ -1,0 +1,3 @@
+Istruzioni:
+Riproducete lo screenshot in allegato usando Laravel e SASS, per questo esercizio non serve usare bootstrap, potete fare tutto con qualche regola css.
+Il sito ha tre pagine, home, prodotti e contatti. Nelle pagine home e contatti potete mettere quello che volete.

@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;
+
+700&display=swap);body {
+  font-family: "Playfair Display", serif;
+  min-height: 100vh;
+}
+
+header {
+  width: 100vw;
+  text-align: center;
+}
+
+header nav {
+  background-color: lightgreen;
+  padding: 2rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 20px;
+}
+
