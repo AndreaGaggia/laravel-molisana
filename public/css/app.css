@@ -44,6 +44,7 @@ main .prodotti .tipo h2 {
   text-align: center;
   font-size: xx-large;
   margin-bottom: 30px;
+  color: #002d75;
 }
 
 main .prodotti .tipo .cards {
@@ -56,18 +57,21 @@ main .prodotti .tipo .cards {
 
 main .prodotti .tipo .cards .prodotto {
   width: 100%;
-  height: 290px;
-  border-radius: 0.5rem;
+  height: 300px;
   position: relative;
-  background-size: cover;
-  background-position: center;
-  transition: background-size 1s ease;
+  overflow: hidden;
+}
+
+main .prodotti .tipo .cards .prodotto img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.75s ease;
 }
 
 main .prodotti .tipo .cards .prodotto .overlay {
   position: absolute;
   inset: 0;
-  background-color: #ffffff70;
+  background-color: #ffffff90;
   display: none;
 }
 
@@ -96,8 +100,16 @@ main .prodotti .tipo .cards .prodotto .overlay h3:after {
   border-bottom: 2px solid #001942;
 }
 
-main .prodotti .tipo .cards .prodotto:hover {
-  background-size: 110% 110%;
+main .prodotti .tipo .cards .prodotto .overlay svg {
+  transition: fill 0.2s ease;
+}
+
+main .prodotti .tipo .cards .prodotto .overlay svg:hover {
+  fill: #001942;
+}
+
+main .prodotti .tipo .cards .prodotto:hover img {
+  transform: scale(1.15);
 }
 
 main .prodotti .tipo .cards .prodotto:hover .overlay {

@@ -43,6 +43,7 @@ main {
                 text-align: center;
                 font-size: xx-large;
                 margin-bottom: 30px;
+                color: #002d75;
             }
 
             .cards {
@@ -53,17 +54,20 @@ main {
 
                 .prodotto {
                     width: 100%;
-                    height: 290px;
-                    border-radius: 0.5rem;
+                    height: 300px;
                     position: relative;
-                    background-size: cover;
-                    background-position: center;
-                    transition: background-size 1s ease;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: transform 0.75s ease;
+                    }
 
                     .overlay {
                         position: absolute;
                         inset: 0;
-                        background-color: #ffffff70;
+                        background-color: #ffffff90;
                         display: none;
 
                         h3 {
@@ -90,10 +94,18 @@ main {
                                 border-bottom: 2px solid #001942;
                             }
                         }
+
+                        svg {
+                            transition: fill 0.2s ease;
+
+                            &:hover {
+                                fill: #001942;
+                            }
+                        }
                     }
 
-                    &:hover {
-                        background-size: 110% 110%;
+                    &:hover img {
+                        transform: scale(1.15);
                     }
 
                     &:hover .overlay {
