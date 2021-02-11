@@ -33,4 +33,50 @@ header {
 
 main {
     padding: 1.5rem;
+
+    .prodotto {
+        width: 480px;
+        height: 290px;
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: #ffffff70;
+            display: none;
+
+            h3 {
+                font-weight: normal;
+                font-size: 22px;
+                color: #001942;
+                text-align: center;
+                position: relative;
+                padding-bottom: 8px;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    height: 1px;
+                    width: 10px;
+                    transform: translateX(-50%);
+                    border-bottom: 2px solid #001942;
+                }
+            }
+        }
+
+        &:hover .overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
 }
