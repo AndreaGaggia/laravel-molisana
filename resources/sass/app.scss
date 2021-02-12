@@ -9,6 +9,13 @@
 body {
     font-family: "Playfair Display", serif;
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.active {
+    color: #001942;
+    border-bottom: 3px solid #001942;
 }
 
 header {
@@ -115,6 +122,49 @@ main {
                         align-items: center;
                         gap: 2rem;
                     }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-size: cover;
+    background-position: bottom;
+    background-color: #ffffffd9;
+    background-blend-mode: overlay;
+    color: #001942;
+
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10rem;
+
+        .menus {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap: 3rem;
+
+            ul {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                & li:first-child {
+                    font-size: 1.5rem;
+                    font-weight: bold;
                 }
             }
         }

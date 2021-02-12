@@ -84,7 +84,7 @@ Route::get('/prodotti', function () {
 })->name('prodotti');
 
 Route::get('/contatti', function () {
-    return "Contatti";
+    return view('contatti');
 })->name('contatti');
 
 Route::get('/prodotti-pro', function () {

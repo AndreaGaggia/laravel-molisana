@@ -1,9 +1,9 @@
 @extends('layouts.base')
 
 @section('title')
-HOME
+CONTATTI
 @endsection
 
 @section('content')
-<h1>HOME</h1>
+<h1>CONTATTI</h1>
 @endsection

@@ -9,6 +9,13 @@
 body {
   font-family: "Playfair Display", serif;
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.active {
+  color: #001942;
+  border-bottom: 3px solid #001942;
 }
 
 header {
@@ -118,5 +125,48 @@ main .prodotti .tipo .cards .prodotto:hover .overlay {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+footer {
+  background-size: cover;
+  background-position: bottom;
+  background-color: #ffffffd9;
+  background-blend-mode: overlay;
+  color: #001942;
+}
+
+footer .container {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10rem;
+}
+
+footer .container .menus {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+}
+
+footer .container .menus ul {
+  list-style: none;
+}
+
+footer .container .menus ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .container .menus ul a:hover {
+  text-decoration: underline;
+}
+
+footer .container .menus ul li:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
