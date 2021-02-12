@@ -126,6 +126,27 @@ main {
             }
         }
     }
+
+    // contatti
+    .address {
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2 {
+            padding: 1rem;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        & h2:first-child {
+            font-size: 28px;
+            border-bottom: 1px solid #80808038;
+            text-transform: uppercase;
+        }
+    }
 }
 
 footer {
