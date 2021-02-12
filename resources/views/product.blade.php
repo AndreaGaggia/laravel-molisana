@@ -11,5 +11,5 @@
 @section('content')
 <h1>{{ $prodotto['titolo'] }}</h1>
 <h2>Cottura: {{ $prodotto['cottura'] }}</h2>
-<p>{{ $prodotto['descrizione'] }}</p>
+<div>{!! $prodotto['descrizione'] !!}</div>
 @endsection
