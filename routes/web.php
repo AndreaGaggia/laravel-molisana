@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/prodotti', function () {
     $data = [
@@ -81,8 +81,19 @@ Route::get('/prodotti', function () {
         ],
     ];
     return view('prodotti', compact('data'));
-});
+})->name('prodotti');
 
 Route::get('/contatti', function () {
     return "Contatti";
+})->name('contatti');
+
+Route::get('/prodotti-pro', function () {
+    $data = json_decode(config('dati-pasta.paste'), true);
+    return view('prodotti-pro', compact('data'));
+})->name('prodotti-pro');
+
+Route::get('/prodotti-pro/{key}', function ($key) {
+    $data = json_decode(config('dati-pasta.paste'), true);
+    $prodotto = $data[$key];
+    return view('product', compact('prodotto'));
 });

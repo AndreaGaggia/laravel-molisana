@@ -57,7 +57,6 @@ main .prodotti .tipo .cards {
 
 main .prodotti .tipo .cards .prodotto {
   width: 100%;
-  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -71,7 +70,7 @@ main .prodotti .tipo .cards .prodotto img {
 main .prodotti .tipo .cards .prodotto .overlay {
   position: absolute;
   inset: 0;
-  background-color: #ffffff90;
+  background-color: #ffffffa1;
   display: none;
 }
 
@@ -101,6 +100,7 @@ main .prodotti .tipo .cards .prodotto .overlay h3:after {
 }
 
 main .prodotti .tipo .cards .prodotto .overlay svg {
+  cursor: pointer;
   transition: fill 0.2s ease;
 }
 
